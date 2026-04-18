@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IE Sports Net — Big League Credibility. Inland Empire Dominance.</title>
+<meta name="description" content="The #1 rated sports show in the Inland Empire for over a decade. Broadcasting on Fox Sports 1350 AM. 145,000+ impressions per show. Claim your territory." />
+<style>
+  :root{
+    --navy:#002d56;
+    --navy-2:#003d72;
+    --steel:#597b9e;
+    --gold:#f5b301;
+    --gold-2:#ffd24d;
+    --red:#c8102e;
+    --white:#ffffff;
+    --muted:#8faabf;
+    --line:rgba(255,255,255,.12);
+    --dark:#001935;
+    --darker:#00101f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--navy);color:var(--white);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .container{max-width:1200px;margin:0 auto;padding:0 24px}
+  .btn{display:inline-block;padding:16px 32px;border-radius:4px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;font-size:14px;transition:transform .2s, box-shadow .2s;cursor:pointer}
+  .btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 8px 24px rgba(245,179,1,.35)}
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(245,179,1,.5)}
+  .btn-outline{border:2px solid var(--white);color:var(--white)}
+  .btn-outline:hover{background:var(--white);color:var(--navy)}
+
+  /* NAV */
+  .nav{position:sticky;top:0;z-index:50;background:rgba(0,45,86,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 24px;max-width:1200px;margin:0 auto}
+  .nav-logo img{height:48px;width:auto;display:block}
+  .nav-links{display:flex;gap:28px;font-size:14px;font-weight:600}
+  .nav-links a:hover{color:var(--gold)}
+  @media(max-width:720px){.nav-links{display:none}}
+
+  /* HERO */
+  .hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;background:
+    linear-gradient(120deg, rgba(0,45,86,.95) 0%, rgba(0,45,86,.78) 55%, rgba(0,45,86,.45) 100%),
+    url('1-RSA-BBB-Game.jpg') center/cover no-repeat;
+    z-index:0}
+  .hero-content{position:relative;z-index:1;padding:80px 0}
+  .eyebrow{display:inline-block;color:var(--gold);font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:13px;border:1px solid var(--gold);padding:6px 14px;border-radius:999px;margin-bottom:24px}
+  h1{font-size:clamp(40px,6vw,76px);line-height:1.05;font-weight:900;letter-spacing:-.02em;margin-bottom:20px}
+  h1 .accent{color:var(--gold);display:block}
+  .lead{font-size:clamp(17px,1.5vw,20px);color:var(--muted);max-width:660px;margin-bottom:36px}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+
+  /* TRUST BAR */
+  .trust{background:var(--dark);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0}
+  .trust-inner{display:flex;align-items:center;justify-content:center;gap:44px;flex-wrap:wrap;color:var(--muted);font-weight:700;letter-spacing:.15em;text-transform:uppercase;font-size:13px}
+  .trust-inner strong{color:var(--white)}
+  .trust-dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+  /* SECTION */
+  section{padding:100px 0}
+  .section-head{max-width:720px;margin:0 auto 56px;text-align:center}
+  .kicker{color:var(--gold);font-weight:800;letter-spacing:.25em;text-transform:uppercase;font-size:12px;margin-bottom:14px}
+  h2{font-size:clamp(30px,3.5vw,46px);font-weight:900;letter-spacing:-.01em;line-height:1.15;margin-bottom:16px}
+  .section-head p{color:var(--muted);font-size:17px}
+
+  /* PAST SPONSORS */
+  .sponsors{background:var(--white);color:var(--navy);padding:64px 0}
+  .sponsors .kicker{color:var(--red)}
+  .sponsors h3{font-size:clamp(22px,2.4vw,30px);font-weight:900;letter-spacing:-.01em;color:var(--navy);margin-bottom:10px}
+  .sponsors .head{text-align:center;margin-bottom:36px}
+  .sponsors .head p{color:#4a6076;font-size:15px;max-width:620px;margin:0 auto}
+  .sponsor-logos{max-width:920px;margin:0 auto;padding:0 24px}
+  .sponsor-logos img{width:100%;height:auto}
+
+  /* STATS */
+  .stats{background:linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%)}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  @media(max-width:900px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+  .stat{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:12px;padding:32px 24px;text-align:center;transition:border-color .2s, transform .2s}
+  .stat:hover{border-color:var(--gold);transform:translateY(-4px)}
+  .stat-num{font-size:clamp(36px,4.5vw,56px);font-weight:900;color:var(--gold);line-height:1;margin-bottom:8px;letter-spacing:-.02em}
+  .stat-label{font-weight:700;font-size:15px;margin-bottom:6px}
+  .stat-sub{color:var(--muted);font-size:13px}
+
+  /* SCROLL STRIP */
+  .scroll-strip{display:flex;gap:4px;padding:4px;background:var(--dark)}
+  .scroll-strip img{height:140px;width:auto;object-fit:cover;flex:1;min-width:0}
+  @media(max-width:720px){.scroll-strip img{height:85px}}
+
+  /* REACH */
+  .reach{background:var(--dark)}
+  .reach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:900px){.reach-grid{grid-template-columns:1fr}}
+  .reach-card{background:var(--navy-2);border:1px solid var(--line);border-radius:12px;padding:32px;transition:transform .2s, border-color .2s}
+  .reach-card:hover{transform:translateY(-4px);border-color:var(--gold)}
+  .reach-icon{width:48px;height:48px;border-radius:10px;background:rgba(89,123,158,.2);display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:900;margin-bottom:18px}
+  .reach-broadcast-badge{display:inline-block;background:#fff;border-radius:8px;padding:10px 16px;margin-bottom:18px;line-height:0}
+  .reach-broadcast-badge img{height:44px;width:auto;display:block}
+  .reach-card h3{font-size:20px;margin-bottom:10px}
+  .reach-card p{color:var(--muted);font-size:14.5px}
+
+  /* TIERS */
+  .tiers{background:var(--dark)}
+  .tier-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  @media(max-width:1100px){.tier-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:640px){.tier-grid{grid-template-columns:1fr}}
+  .tier{position:relative;background:var(--navy-2);border:1px solid var(--line);border-radius:12px;padding:36px 28px;display:flex;flex-direction:column}
+  .tier.featured{border-color:var(--gold);box-shadow:0 20px 60px rgba(245,179,1,.15)}
+  .tier.enterprise{border-color:var(--steel);box-shadow:0 20px 60px rgba(89,123,158,.2);background:linear-gradient(160deg,#002d56 0%,#003d72 100%)}
+  .tier-badge{position:absolute;top:-14px;right:20px;font-weight:900;font-size:11px;letter-spacing:.15em;padding:6px 12px;border-radius:4px;text-transform:uppercase}
+  .tier-badge-gold{background:var(--gold);color:var(--navy)}
+  .tier-badge-steel{background:var(--steel);color:var(--white)}
+  .tier-name{font-size:13px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px}
+  .tier-gold .tier-name{color:var(--gold)}
+  .tier-silver .tier-name{color:#c0c8d4}
+  .tier-bronze .tier-name{color:#cd7f32}
+  .tier-enterprise .tier-name{color:var(--steel)}
+  .tier-price{font-size:28px;font-weight:900;margin-bottom:20px;line-height:1.1}
+  .tier-price small{font-size:13px;color:var(--muted);font-weight:600;display:block;margin-top:6px}
+  .tier ul{list-style:none;margin-bottom:28px;flex-grow:1}
+  .tier li{padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px;color:var(--muted);display:flex;gap:10px;align-items:flex-start}
+  .tier li:before{content:"✓";color:var(--gold);font-weight:900;flex-shrink:0}
+  .tier.enterprise li:before{color:var(--steel)}
+  .btn-steel{background:var(--steel);color:var(--white)}
+  .btn-steel:hover{background:#6d90b5;transform:translateY(-2px)}
+
+  /* IMPACT */
+  .impact{position:relative;overflow:hidden;background:var(--navy)}
+  .impact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+  @media(max-width:900px){.impact-grid{grid-template-columns:1fr}}
+  .impact-visual{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/5;background:#000}
+  .impact-visual img{width:100%;height:100%;object-fit:cover}
+  .impact-badge{position:absolute;top:24px;left:24px;background:var(--red);color:var(--white);padding:8px 14px;font-weight:900;letter-spacing:.15em;font-size:11px;text-transform:uppercase;border-radius:4px}
+  .impact h2 .accent{color:var(--gold)}
+  .impact-stat{font-size:clamp(56px,8vw,96px);font-weight:900;color:var(--gold);line-height:1;letter-spacing:-.03em;margin:20px 0 12px}
+  .impact p{color:var(--muted);font-size:17px;margin-bottom:18px}
+
+  /* ── EVENT SLIDER ── */
+  .event-slider-wrap{background:var(--darker);padding:72px 0 0}
+  .event-slider-wrap .section-head{margin-bottom:40px}
+  .slider{position:relative;overflow:hidden;border-radius:12px;width:855px;max-width:100%;margin:0 auto}
+  .slides{display:flex;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+  .slide{min-width:100%;position:relative;width:855px;height:450px;background:#000;flex-shrink:0}
+  .slide img{width:855px;height:450px;max-width:100%;object-fit:cover;display:block}
+  .slide-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,21,42,.92) 0%,rgba(0,21,42,.3) 55%,transparent 100%)}
+  .slide-info{position:absolute;bottom:0;left:0;right:0;padding:32px 36px}
+  .slide-date{display:inline-block;background:var(--gold);color:var(--navy);font-weight:900;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:5px 12px;border-radius:3px;margin-bottom:10px}
+  .slide-title{font-size:clamp(20px,3vw,30px);font-weight:900;line-height:1.1;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+  .slide-sub{font-size:14px;color:var(--muted);margin-top:6px;font-weight:600}
+  .slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,45,86,.7);border:1px solid var(--line);color:var(--white);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s;z-index:10;backdrop-filter:blur(6px);font-size:18px;line-height:1;padding:0;-webkit-appearance:none;appearance:none}
+  .slider-btn:hover{background:var(--navy-2)}
+  .slider-prev{left:16px}
+  .slider-next{right:16px}
+  .slider-dots{display:flex;justify-content:center;gap:8px;padding:20px 0 48px}
+  .dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25);cursor:pointer;transition:background .2s, transform .2s;border:none}
+  .dot.active{background:var(--gold);transform:scale(1.3)}
+
+  /* CTA */
+  .cta{background:linear-gradient(135deg, var(--gold) 0%, var(--gold-2) 100%);color:var(--navy);text-align:center}
+  .cta h2{color:var(--navy)}
+  .cta p{color:rgba(0,45,86,.8);font-size:18px;max-width:640px;margin:0 auto 36px}
+  .cta .btn-dark{background:var(--navy);color:var(--white);padding:18px 44px;font-size:15px}
+  .cta .btn-dark:hover{background:var(--darker)}
+  .urgency{display:inline-block;background:var(--red);color:var(--white);font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:12px;padding:8px 16px;border-radius:999px;margin-bottom:20px}
+
+  /* FOOTER */
+  footer{background:var(--darker);padding:48px 0 32px;border-top:1px solid var(--line)}
+  .foot-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+  .foot-logo img{height:40px;width:auto;display:block}
+  .foot-links{display:flex;gap:24px;font-size:13px;color:var(--muted)}
+  .foot-links a:hover{color:var(--gold)}
+  .copy{color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo"><img src="IESportsNet.png" alt="IE Sports Net" /></a>
+    <div class="nav-links">
+      <a href="#reach">Reach</a>
+      <a href="#tiers">Partnerships</a>
+      <a href="#impact">Community</a>
+      <a href="#events">Events</a>
+      <a href="#cta">Claim Territory</a>
+    </div>
+    <a href="#cta" class="btn btn-gold" style="padding:10px 18px;font-size:12px">Secure 2026/27</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <span class="eyebrow">★ #1 Rated Sports Show · Inland Empire · 10+ Years</span>
+    <h1>
+      Big League Credibility.
+      <span class="accent">Inland Empire Dominance.</span>
+    </h1>
+    <p class="lead">
+      IE Sports Net is a premier multi-platform media and event ecosystem broadcasting live on <strong style="color:#fff">Fox Sports 1350 AM</strong> — delivering elite brand visibility through professional radio, high-impact digital content, and massive on-site All-Star activations. Over 145,000+ impressions per show. This is where regional businesses become household names.
+    </p>
+    <div class="hero-ctas">
+      <a href="#cta" class="btn btn-gold">Claim Your Territory →</a>
+      <a href="#tiers" class="btn btn-outline">View Partnership Tiers</a>
+    </div>
+  </div>
+</header>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="trust-inner">
+    <span><strong>Fox Sports</strong> 1350 AM</span>
+    <span class="trust-dot"></span>
+    <span><strong>iHeartRadio</strong> Studios</span>
+    <span class="trust-dot"></span>
+    <span><strong>All-Star Game</strong> Legacy</span>
+    <span class="trust-dot"></span>
+    <span><strong>NFHS</strong> Network Partner</span>
+    <span class="trust-dot"></span>
+    <span><strong>Cal-Hi Sports</strong> Recognized</span>
+  </div>
+</div>
+
+<!-- PAST TITLE SPONSORS -->
+<section class="sponsors">
+  <div class="head">
+    <div class="kicker">Trusted By</div>
+    <h3>Past Title Sponsors of Our All-Star Events</h3>
+    <p>Regional leaders and national brands have already put their name on the IESN stage. Join the roster.</p>
+  </div>
+  <div class="sponsor-logos">
+    <img src="sponsor line - logos.png" alt="Past title sponsors: Baker's, Inland Empire Health Plan, Riverside Sheriffs' Association, Thinkwise Credit Union, Raising Cane's" />
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats" id="stats">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">By The Numbers</div>
+      <h2>A Proven Economic Engine</h2>
+      <p>Data-driven reach across broadcast, digital, and live events — built to engage the loyal Gen Z demographic and their families that forward-thinking brands can't reach anywhere else in the IE.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-num">145K+</div>
+        <div class="stat-label">Impressions Per Show</div>
+        <div class="stat-sub">Radio · App · Stream</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">10K+</div>
+        <div class="stat-label">Annual Live Spectators</div>
+        <div class="stat-sub">Across all All-Star activations</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">10 yrs</div>
+        <div class="stat-label">#1 Rated in the IE</div>
+        <div class="stat-sub">Uninterrupted leadership</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">$12K+</div>
+        <div class="stat-label">Scholarships Awarded</div>
+        <div class="stat-sub">And climbing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCROLL STRIP -->
+<div class="scroll-strip">
+  <img src="2-RSA-BBB-Game.jpg" alt="" />
+  <img src="3-RSA-GBB-Game.jpg" alt="" />
+  <img src="IMG_4116.jpeg" alt="" />
+  <img src="IESportsNetMediaDaySaturday20251108-028105551 (1).jpg" alt="IE Sports Net Media Day" />
+  <img src="25 ie-flag.png" alt="" />
+  <img src="26-RSA-Cheer-04.jpg" alt="" />
+  <img src="4-RSA-BBB-Game.jpg" alt="" />
+</div>
+
+<!-- REACH -->
+<section class="reach" id="reach">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Multi-Platform Dominance</div>
+      <h2>Three Channels. One Unstoppable Voice.</h2>
+      <p>Your brand rides on the most trusted sports media infrastructure in Southern California — penetrating every corner of the Inland Empire market.</p>
+    </div>
+    <div class="reach-grid">
+      <div class="reach-card">
+        <div class="reach-broadcast-badge">
+          <img src="FOX Sports 1350 Long Form.png" alt="Fox Sports AM 1350 Riverside San Bernardino" />
+        </div>
+        <h3>Fox Sports 1350 AM</h3>
+        <p>Live professional broadcasts reaching every car, office, and home across the Inland Empire's drive-time audience on the region's most recognized sports radio frequency.</p>
+      </div>
+      <div class="reach-card">
+        <div class="reach-broadcast-badge">
+          <img src="iheartradio-logo hd.png" alt="iHeartRadio" />
+        </div>
+        <h3>iHeartRadio App</h3>
+        <p>On-demand reach with national distribution — your sponsorship follows listeners wherever they go, on the #1 digital audio platform in the country.</p>
+      </div>
+      <div class="reach-card">
+        <div class="reach-broadcast-badge">
+          <img src="live-events-badge.svg" alt="Live Events & Streaming" />
+        </div>
+        <h3>Live Events & Streaming</h3>
+        <p>10,000+ annual spectators across our All-Star activations — plus Gen Z-first digital content across social and OTT that converts passionate fans into loyal brand advocates for life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIERS -->
+<section class="tiers" id="tiers">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Strategic Integration</div>
+      <h2>Claim Your Category. Exclusively.</h2>
+      <p>Each tier locks a competitor out. Once your industry is claimed, it's closed for the season.</p>
+    </div>
+    <div class="tier-grid">
+
+      <!-- BRONZE -->
+      <div class="tier tier-bronze">
+        <div class="tier-name">Bronze Partner</div>
+        <div class="tier-price">Market Entry<small>Brand presence · Regional</small></div>
+        <ul>
+          <li>Logo placement on broadcast graphics</li>
+          <li>On-air mentions during live shows</li>
+          <li>Event signage at 2 flagship games</li>
+          <li>Social media co-branded posts</li>
+          <li>Digital banner on IESN platforms</li>
+        </ul>
+        <a href="#cta" class="btn btn-outline">Request Details</a>
+      </div>
+
+      <!-- GOLD (featured) -->
+      <div class="tier tier-gold featured">
+        <div class="tier-badge tier-badge-gold">Most Requested</div>
+        <div class="tier-name">Gold Partner</div>
+        <div class="tier-price">Five-Figure<small>Category exclusive · Dominant</small></div>
+        <ul>
+          <li>Exclusive category lockout — no competitors</li>
+          <li>Named-segment sponsorship on every show</li>
+          <li>Premier signage at ALL live events</li>
+          <li>Featured interviews + content integration</li>
+          <li>iHeartMedia studio appearances</li>
+          <li>Co-branded scholarship recognition</li>
+          <li>Dedicated account strategy team</li>
+        </ul>
+        <a href="#cta" class="btn btn-gold">Secure Gold →</a>
+      </div>
+
+      <!-- SILVER -->
+      <div class="tier tier-silver">
+        <div class="tier-name">Silver Partner</div>
+        <div class="tier-price">Growth Investment<small>Elevated visibility · Rising</small></div>
+        <ul>
+          <li>Recurring on-air brand integration</li>
+          <li>Branded content segments</li>
+          <li>Signage at 5+ flagship events</li>
+          <li>Social media campaign series</li>
+          <li>Digital ad placements across properties</li>
+        </ul>
+        <a href="#cta" class="btn btn-outline">Request Details</a>
+      </div>
+
+      <!-- ENTERPRISE -->
+      <div class="tier tier-enterprise enterprise">
+        <div class="tier-badge tier-badge-steel">Custom Build</div>
+        <div class="tier-name">Enterprise Partner</div>
+        <div class="tier-price">Let's Build It<small>Fully custom · No ceiling</small></div>
+        <ul>
+          <li>Full-season presenting sponsorship</li>
+          <li>Custom multi-platform integration strategy</li>
+          <li>Dedicated broadcast segment naming rights</li>
+          <li>Co-produced branded content series</li>
+          <li>Live event category ownership</li>
+          <li>Executive access & advisory relationship</li>
+          <li>Priority renewal rights year-over-year</li>
+        </ul>
+        <a href="#cta" class="btn btn-steel">Start a Conversation →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="impact" id="impact">
+  <div class="container">
+    <div class="impact-grid">
+      <div class="impact-visual">
+        <div class="impact-badge">Community Impact</div>
+        <img src="25-volley-mvp-(2).jpg" alt="Savannah Sheridan receiving IE Sports Net scholarship check" />
+      </div>
+      <div>
+        <div class="kicker">Proof of Concept</div>
+        <h2>$12,000+ Back to <span class="accent">Our Kids.</span></h2>
+        <div class="impact-stat">$12K+</div>
+        <p>
+          IE Sports Net isn't just a media property — it's a community investment engine. Every sponsorship dollar fuels real scholarships, youth programs, and the next generation of IE student-athletes.
+        </p>
+        <p>
+          When you partner with IESN, your brand is stitched into a decade-long legacy of <strong style="color:#fff">credibility, character, and local commitment</strong> — the kind of authentic alignment money can't manufacture.
+        </p>
+        <a href="#cta" class="btn btn-gold" style="margin-top:20px">Partner With Purpose →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENT SLIDER -->
+<div class="event-slider-wrap" id="events">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">2026 · 2027 Season</div>
+      <h2>The Stage Is Set. Stake Your Claim.</h2>
+      <p>Nine All-Star events. Thousands of fans. One exclusive spot per category — per event.</p>
+    </div>
+  </div>
+
+  <div class="container" style="padding-bottom:0">
+    <div class="slider" id="eventSlider">
+      <div class="slides" id="slideTrack">
+
+        <div class="slide">
+          <img src="slides/iesn-softball copy.jpg" alt="All-Star Softball" />
+          <div class="slide-overlay"></div>
+          <div class="slide-info">
+            <span class="slide-date">June 13, 2026</span>
+            <div class="slide-title">All-Star Softball</div>
+            <div class="slide-sub">IE Sports Net All-Star Series</div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="slides/iesn-baseball.jpg" alt="All-Star Baseball" />
+          <div class="slide-overlay"></div>
+          <div class="slide-info">
+            <span class="slide-date">June 20, 2026</span>
+            <div class="slide-title">All-Star Baseball</div>
+            <div class="slide-sub">IE Sports Net All-Star Series</div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="0-event-promo-7.jpg" alt="All-Star Volleyball" style="object-position:top" />
+          <div class="slide-overlay"></div>
+          <div class="slide-info">
+            <span class="slide-date">November 26, 2026</span>
+            <div class="slide-title">All-Star Volleyball</div>
+            <div class="slide-sub">IE Sports Net All-Star Series</div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="IMG_4117.jpeg" alt="All-Star Football" style="object-position:top" />
+          <div class="slide-overlay"></div>
+          <div class="slide-info">
+            <span class="slide-date">January 9, 2027</span>
+            <div class="slide-title">All-Star Football</div>
+            <div class="slide-sub">Boys — Class of '27</div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="slides/25-flag-pics 8.jpg" alt="All-Star Flag Football" />
+          <div class="slide-overlay"></div>
+          <div class="slide-info">
+            <span class="slide-date">January 9, 2027</span>
+            <div class="slide-title">All-Star Flag Football</div>
+            <div class="slide-sub">Girls — Class of '27</div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="slides/25-fb futures-pic 4.jpg" alt="All-Star Football 8th Grade" />
+          <div class="slide-overlay"></div>
+          <div class="slide-info">
+            <span class="slide-date">January 9, 2027</span>
+            <div class="slide-title">All-Star Football</div>
+            <div class="slide-sub">8th Grade</div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="slides/7-RSA-BBB-Game.jpg" alt="All-Star Basketball Boys" />
+          <div class="slide-overlay"></div>
+          <div class="slide-info">
+            <span class="slide-date">March 20, 2027</span>
+            <div class="slide-title">All-Star Basketball</div>
+            <div class="slide-sub">Boys — Class of '27</div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="slides/9-RSA-GBB-Game.jpg" alt="All-Star Basketball Girls" />
+          <div class="slide-overlay"></div>
+          <div class="slide-info">
+            <span class="slide-date">March 20, 2027</span>
+            <div class="slide-title">All-Star Basketball</div>
+            <div class="slide-sub">Girls — Class of '27</div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="slides/26-8thGrade 8.jpg" alt="All-Star Basketball 8th Grade" />
+          <div class="slide-overlay"></div>
+          <div class="slide-info">
+            <span class="slide-date">March 20, 2027</span>
+            <div class="slide-title">All-Star Basketball</div>
+            <div class="slide-sub">8th Grade</div>
+          </div>
+        </div>
+
+      </div><!-- /slides -->
+
+      <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous">&#8249;</button>
+      <button class="slider-btn slider-next" id="sliderNext" aria-label="Next">&#8250;</button>
+    </div><!-- /slider -->
+
+    <div class="slider-dots" id="sliderDots"></div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta" id="cta">
+  <div class="container">
+    <div class="urgency">⚡ Limited 2026 / 2027 Inventory</div>
+    <h2>Claim Your Territory Before a Competitor Does.</h2>
+    <p>Category exclusivity is first-come. Once your industry is locked, the door closes for the season. Let's talk about securing your market position today.</p>
+    <a href="mailto:eddie@iesportsnet.com?subject=IESN%202026/27%20Sponsorship%20Inquiry" class="btn btn-dark">Request a Partnership Call →</a>
+    <div style="margin-top:20px;font-size:14px;color:rgba(0,45,86,.7)">
+      eddie@iesportsnet.com · response within 24 hours
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container foot-inner">
+    <a href="#" class="foot-logo"><img src="IESportsNet.png" alt="IE Sports Net" /></a>
+    <div class="foot-links">
+      <a href="https://www.nfhs.org/" target="_blank" rel="noopener">NFHS</a>
+      <a href="https://www.calhisports.com/" target="_blank" rel="noopener">Cal-Hi Sports</a>
+      <a href="https://www.on3.com/" target="_blank" rel="noopener">On3</a>
+      <a href="#cta">Contact</a>
+    </div>
+    <div class="copy">© 2026 IE Sports Net · Fox Sports 1350 AM · iHeartMedia Studios</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const track   = document.getElementById('slideTrack');
+  const dotsEl  = document.getElementById('sliderDots');
+  const total   = track.children.length;
+  let   current = 0;
+  let   timer;
+
+  // build dots
+  for(let i=0;i<total;i++){
+    const d = document.createElement('button');
+    d.className = 'dot' + (i===0?' active':'');
+    d.addEventListener('click',()=>goTo(i));
+    dotsEl.appendChild(d);
+  }
+
+  function goTo(n){
+    current = (n + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dotsEl.querySelectorAll('.dot').forEach((d,i)=>
+      d.classList.toggle('active', i===current));
+  }
+
+  function next(){ goTo(current+1); }
+  function prev(){ goTo(current-1); }
+
+  document.getElementById('sliderNext').addEventListener('click',()=>{clearInterval(timer);next();startAuto()});
+  document.getElementById('sliderPrev').addEventListener('click',()=>{clearInterval(timer);prev();startAuto()});
+
+  function startAuto(){ timer = setInterval(next, 5000); }
+  startAuto();
+
+  // pause on hover
+  document.getElementById('eventSlider').addEventListener('mouseenter',()=>clearInterval(timer));
+  document.getElementById('eventSlider').addEventListener('mouseleave',startAuto);
+})();
+</script>
+</body>
+</html>
