@@ -86,8 +86,9 @@
 
   /* STATS */
   .stats{background:linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%)}
-  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-  @media(max-width:900px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+  .stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:24px}
+  @media(max-width:1100px){.stats-grid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:700px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
   .stat{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:12px;padding:32px 24px;text-align:center;transition:border-color .2s, transform .2s}
   .stat:hover{border-color:var(--gold);transform:translateY(-4px)}
   .stat-num{font-size:clamp(36px,4.5vw,56px);font-weight:900;color:var(--gold);line-height:1;margin-bottom:8px;letter-spacing:-.02em}
@@ -101,8 +102,9 @@
 
   /* REACH */
   .reach{background:var(--dark)}
-  .reach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  @media(max-width:900px){.reach-grid{grid-template-columns:1fr}}
+  .reach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  @media(max-width:1100px){.reach-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.reach-grid{grid-template-columns:1fr}}
   .reach-card{background:var(--navy-2);border:1px solid var(--line);border-radius:12px;padding:32px;transition:transform .2s, border-color .2s}
   .reach-card:hover{transform:translateY(-4px);border-color:var(--gold)}
   .reach-icon{width:48px;height:48px;border-radius:10px;background:rgba(89,123,158,.2);display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:900;margin-bottom:18px}
@@ -246,6 +248,13 @@
           <span>Inland Empire's most trusted platform</span>
         </div>
       </div>
+      <div class="hero-benefit">
+        <div class="hero-benefit-icon">📲</div>
+        <div class="hero-benefit-text">
+          <strong>911K+ Monthly Views</strong>
+          <span>Instagram · 66.8% new audience reach</span>
+        </div>
+      </div>
     </div>
 
     <!-- SOCIAL PROOF PLACEHOLDER -->
@@ -322,6 +331,11 @@
         <div class="stat-label">Scholarships Awarded</div>
         <div class="stat-sub">And climbing</div>
       </div>
+      <div class="stat">
+        <div class="stat-num">911K+</div>
+        <div class="stat-label">Monthly Instagram Views</div>
+        <div class="stat-sub">113K+ accounts reached</div>
+      </div>
     </div>
   </div>
 </section>
@@ -342,7 +356,7 @@
   <div class="container">
     <div class="section-head">
       <div class="kicker">Multi-Platform Dominance</div>
-      <h2>Three Channels. One Unstoppable Voice.</h2>
+      <h2>Four Channels. One Unstoppable Voice.</h2>
       <p>Your brand rides on the most trusted sports media infrastructure in Southern California — penetrating every corner of the Inland Empire market.</p>
     </div>
     <div class="reach-grid">
@@ -365,7 +379,21 @@
           <img src="live-events-badge.svg" alt="Live Events & Streaming" />
         </div>
         <h3>Live Events & Streaming</h3>
-        <p>10,000+ annual spectators across our All-Star activations — plus Gen Z-first digital content across social and OTT that converts passionate fans into loyal brand advocates for life.</p>
+        <p>10,000+ annual spectators across Sports Event activations plus Gen Z-first digital content across social and OTT — converting eyes into loyal brand advocates for life.</p>
+      </div>
+      <div class="reach-card">
+        <div class="reach-icon">📲</div>
+        <h3>Social & Digital</h3>
+        <p><strong style="color:#fff">911K+ monthly views</strong> on Instagram with 113K+ accounts reached. 66.8% of views come from non-followers — your brand is discovered by new audiences every single post.</p>
+        <div style="margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1)">
+          <div style="font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px">Top IE Markets Reached</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="background:rgba(245,179,1,.12);border:1px solid rgba(245,179,1,.25);color:var(--gold);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px">Riverside</span>
+            <span style="background:rgba(245,179,1,.12);border:1px solid rgba(245,179,1,.25);color:var(--gold);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px">Corona</span>
+            <span style="background:rgba(245,179,1,.12);border:1px solid rgba(245,179,1,.25);color:var(--gold);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px">Fontana</span>
+            <span style="background:rgba(245,179,1,.12);border:1px solid rgba(245,179,1,.25);color:var(--gold);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px">Moreno Valley</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
